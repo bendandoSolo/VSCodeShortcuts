@@ -9,6 +9,7 @@ export const ReadMe: React.FunctionComponent<IReadMeProps> = (props) => {
     <h1>Read Me</h1>
 
     <h2>Todo</h2>
+    <h3>Next priority is some basic styling of the shortcuts so that we can see them properly and then delete the old version.</h3>
     <h4>Priority 1 is to copy over the old data so we don't have to reference the old projects and can delete it</h4>
 
     <Stack spacing={2} direction="column" alignItems="flex-centre">
