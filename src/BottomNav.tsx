@@ -9,7 +9,7 @@ import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 
 export const BottomNav: React.FunctionComponent<{}> = () => {
   return (
-    <BottomNavigation showLabels sx={{ width: '100%', position: 'fixed', bottom: 0 }}>
+    <BottomNavigation showLabels sx={{ width: '100vw', position: 'fixed', bottom: 0 }}>
       <BottomNavigationAction label="Home" icon={<EditIcon />} component="a" href="/" target="_blank" />
       <BottomNavigationAction label="Navigation" icon={<MyLocationIcon />} component="a" href="/Navigation" target="_blank" />
       <BottomNavigationAction label="Other" icon={<QuestionMarkIcon />} component="a" href="/other" target="_blank" />
