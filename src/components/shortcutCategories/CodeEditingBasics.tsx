@@ -1,87 +1,44 @@
-import React from 'react';
+//@ts-ignore
+import { ThreeColumnsContainer } from '@components/layouts/ThreeColumnContainer';
+//@ts-ignore
+import { ShortCut } from '@components/layouts/ShortcutView';
+
 
 const CodeEditingBasics = () => (
-    <ol className="flex flex-col items-center justify-center py-2 rounded border border-orange-500 max-w-3xl my-4 border-2 p-2">
-    <h2 className="text-center py-2 text-lg font-bold">Code Editing Basics</h2>
-    <p className='font-bold text-sm'>Get familiar with these ASAP</p>
+  <>
+    <h2>Code Editing Basics</h2>
+    <ThreeColumnsContainer>
 
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>ALT + click; </p>
-      <p>Place cursor on multiple places at once</p>
-    </li>
+    <ShortCut Line1='ALT + click' Line2='Place cursor on multiple places at once' />
+    <ShortCut Line1='CTRL + ALT + &larr;/&rarr;' Line2='Add another cursor at same place above or below' />
 
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + ALT + &larr;/&rarr; </p>
-      <p>Add another cursor at same place above or below</p>
-    </li>
+    {/* todo: indicate that this is know and not need to be added to the list */}
+    <ShortCut Line1='CTRL + &uarr;/&darr;' Line2='Navigate a line, one line at a time' />
+    <ShortCut Line1='CTRL + SHIFT + &uarr;/&darr;' Line2='Select a line, one line at a time' />
 
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + &larr;/&rarr; </p>
-      <p>Navigate a line, one word at a time</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + SHIFT + &larr;/&rarr; </p>
-      <p>Highlights a line, one word at a time</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>ALT + &uarr;/&darr; </p>
-      <p>Selects and moves entire line up and down, also works with whole selected blocks of code</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>ALT +  SHIFT + &uarr;/&darr; </p>
-      <p>Duplicate lines up and down (or use for entire selection)</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + D on highlighted word </p>
-      <p>Highlights that word, repeatedly CTRL + D highlights the next word with the same text + adds cursor to it</p>
-      <p>Can be used to highlight and edit multiple words as cursors appears on each one</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + SHIFT L on highlighted word </p>
-      <p>Highlights any instance of that word adds cursor so can edit </p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>SHIFT + F12  on highlighted word </p>
-      <p>Find all references in sidebar</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>F12  on highlighted word </p>
-      <p>Goto Definition</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>3 clicks or CTRL + L/ 4clicks </p>
-      <p>Select Entire Line , with CTRL + L pressing multiple times keeps selecting next lines/ Select Entire Doc, </p>
-    </li>
+    <ShortCut Line1='CTRL + &larr;/&rarr;' Line2='Select a line, one word at a time' />
 
-    
-    
-    <li className="flex flex-col items-center justify-center py-2"> 
-    <p className='font-bold'>CTRL + SHIFT + ENTER  </p>
-      <p>Insert line below</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2"> 
-    <p className='font-bold'>CTRL + ENTER  </p>
-      <p>open copilot solutions???</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + &uarr;/&darr;   </p>
-      <p>scroll up and down file, leaving cursor where it was</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>ALT + Z   </p>
-      <p>toggle word wrap</p>
-    </li>
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>Click the line number/ CTRL + L</p>
-      <p>selects entire line </p>
-    </li>
-    
-    <li className="flex flex-col items-center justify-center py-2">
-      <p className='font-bold'>CTRL + SHIFT + \</p>
-      <p>Jump to matching bracket </p>
-    </li>
+    <ShortCut Line1='ALT + &uarr;/&darr;' Line2='Selects and moves entire line up and down, also works with whole selected blocks of code' />
 
-  </ol>
+    <ShortCut Line1='ALT +  SHIFT + &uarr;/&darr;' Line2='Duplicate lines up and down (or use for entire selection)' />
+
+    <ShortCut Line1='CTRL + SHIFT + D' Line2='Highlights that word, repeatedly CTRL + D highlights the next word with the same text + adds cursor to it' Line3="Can be used to highlight and edit multiple words as cursors appears on each one" />
+
+    <ShortCut Line1='CTRL + SHIFT L on highlighted word' Line2='Highlights any instance of that word adds cursor so can edit' />
+
+    <ShortCut Line1='SHIFT + F12 on highlighted word' Line2='Find all references in sidebar' />
+
+  <ShortCut Line1='F12 on highlighted word' Line2='Goto Definition' />
+  <ShortCut Line1='3 clicks or CTRL + L/ 4 clicks' Line2='Select Entire Line, with CTRL + L pressing multiple times keeps selecting next lines/ Select Entire Doc' />
+  <ShortCut Line1='CTRL + SHIFT + ENTER' Line2='Insert line below' />
+  <ShortCut Line1='CTRL + ENTER' Line2='Open Copilot solutions???' />
+  <ShortCut Line1='CTRL + ↑/↓' Line2='Scroll up and down file, leaving cursor where it was' />
+  <ShortCut Line1='ALT + Z' Line2='Toggle word wrap' />
+  <ShortCut Line1='Click the line number/ CTRL + L' Line2='Selects entire line' />
+  <ShortCut Line1='CTRL + SHIFT + \' Line2='Jump to matching bracket' />
+
+  </ThreeColumnsContainer>
+  </>
 );
 
 export default CodeEditingBasics;

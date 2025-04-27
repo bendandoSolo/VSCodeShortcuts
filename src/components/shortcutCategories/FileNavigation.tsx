@@ -1,17 +1,18 @@
-import React from 'react';
+//@ts-ignore
+import { ThreeColumnsContainer } from '@components/layouts/ThreeColumnContainer';
+//@ts-ignore
+import { ShortCut } from '@components/layouts/ShortcutView';
 
 const FileNavigation = () => (
-    <ol className="flex flex-col items-center justify-center py-2 rounded border border-orange-500 max-w-3xl my-4 border-2 p-2">
-        <h2 className="text-center py-2 text-lg font-bold">File Navigation</h2>
-        <li className="flex flex-col items-center justify-center py-2">
-            <p className='font-bold'>CTRL + Home/End </p>
-            <p>Goto Top/Bottom of file</p>
-        </li>
-        <li className="flex flex-col items-center justify-center py-2">
-            <p className='font-bold'>ALT +  + &larr;/&rarr;</p>
-            <p>Jump back and forward through recent sections of code/files</p>
-        </li>
-    </ol>
+    <>
+    <h2 className="text-center py-2 text-lg font-bold">File Navigation</h2>
+    <ThreeColumnsContainer>
+        <ShortCut Line1='CTRL + Home/End' Line2='Goto Top/Bottom of file' />
+        <ShortCut Line1='ALT +  + &larr;/&rarr;' Line2='Jump back and forward through recent sections of code/files' />
+        <ShortCut Line1='CTRL + SHIFT + T' Line2='Reopen last closed tab' />
+        <ShortCut Line1='CTRL + SHIFT + F' Line2='Open Search whole project' />
+        </ThreeColumnsContainer>
+    </>
 );
 
 export default FileNavigation;
