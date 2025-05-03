@@ -4,13 +4,12 @@ import Stack from '@mui/material/Stack';
 interface IReadMeProps {
 }
 
-export const ReadMe: React.FunctionComponent<IReadMeProps> = (props) => {
+export const ReadMe: React.FunctionComponent<IReadMeProps> = () => {
   return <>
     <h1>Read Me /TODO</h1>
 
     <Stack spacing={2} direction="column" alignItems="flex-centre">
         <h2>Next Steps</h2>
-        <p>Fix TS config</p>
         <p>Add prettier config</p>
         <p>Setup basic linting</p>
         <p>Make it usable by swapping and renaming line 1 and line2 then have accordion with answers.</p>

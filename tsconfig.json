@@ -5,13 +5,15 @@
   "compilerOptions": {
     // ... your other compiler options
     "baseUrl": ".",
-    "paths": {
+    
+        "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
     },
   },
   "include": ["src"],
+  "emitDeclarationOnly": true,
   //"files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
