@@ -4,14 +4,17 @@ import Stack from '@mui/material/Stack';
 interface IReadMeProps {
 }
 
-export const ReadMe: React.FunctionComponent<IReadMeProps> = () => {
+export const Todo: React.FunctionComponent<IReadMeProps> = () => {
   return <>
     <h1>Read Me /TODO</h1>
 
     <Stack spacing={2} direction="column" alignItems="flex-centre">
         <h2>Next Steps</h2>
+        
         <p>Add prettier config</p>
+        <p>Fix weird alignment issues</p>
         <p>Setup basic linting</p>
+        <p>Create page of know answers, some of the shortcuts we know and should test ourselves and then remove from project</p>
         <p>Make it usable by swapping and renaming line 1 and line2 then have accordion with answers.</p>
         <p>Continue to leare better shortcuts </p>
 

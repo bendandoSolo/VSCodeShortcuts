@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router";
 import './index.css'
 import Index from './Index'
-import { ReadMe } from './sections/ReadMe'
+import { Todo } from './sections/Todo'
 import { Layout } from './Layout'
 import {OtherPage} from './OtherPage'
 import {LearnTSPage} from './LearnTSPage'
@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/Navigation" element={<NavigationPage />} />
           <Route path="/other" element={<OtherPage />} />
           <Route path="/TS" element={<LearnTSPage />} />
-          <Route path="/readMe" element={<ReadMe />} />
+          <Route path="/readMe" element={<Todo />} />
         </Route>
       </Routes>
   </StrictMode>

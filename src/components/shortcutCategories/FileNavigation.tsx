@@ -5,7 +5,7 @@ import { ShortCut } from '@components/layouts/ShortcutView';
 
 const FileNavigation = () => (
     <>
-    <h2 className="text-center py-2 text-lg font-bold">File Navigation</h2>
+    <h2 className="text-center py-2 text-lg font-bold">File Navigation - seems to be repeated perhaps remove</h2>
     <ThreeColumnsContainer>
         <ShortCut Line1='CTRL + Home/End' Line2='Goto Top/Bottom of file' />
         <ShortCut Line1='ALT +  + &larr;/&rarr;' Line2='Jump back and forward through recent sections of code/files' />

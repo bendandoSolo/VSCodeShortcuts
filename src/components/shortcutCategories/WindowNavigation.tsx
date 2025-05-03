@@ -17,10 +17,11 @@ const WindowNavigation = () => (
         <ShortCut Line1='CTRL + SHIFT + X' Line2='Goto Extensions' />
         <ShortCut Line1='CTRL + G' Line2='Goto Source Control' />
         <ShortCut Line1='CTRL + ,' Line2='Open Settings' />
-        <ShortCut Line1='CTRL + SHIFT + V' Line2='Show Preview mode for markdown/mermaid diagrams' />
+        <ShortCut Line1='CTRL + SHIFT + V' Line2='Show Preview mode for markdown/mermaid diagrams (maybe needs pluggin)' />
         <ShortCut Line1='CTRL + W' Line2='Close preview' />
         <ShortCut Line1='CTRL + K + V' Line2='Preview on side' />
         <ShortCut Line1='ALT + ←/→' Line2='Jump back and forward through recent sections of code/files' />
+        <ShortCut Line1='CCTRL + TAB' Line2='Shows entire navigation history' />
         </ThreeColumnsContainer>
     </>
 );
