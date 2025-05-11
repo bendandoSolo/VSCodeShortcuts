@@ -25,6 +25,8 @@ export const Todo: React.FunctionComponent<IReadMeProps> = () => {
         <div>- make game out of remembering the features, using google drive a spread sheet of features that get pulled in 
           then spreadsheet we mark off when we learn them, or not!
         </div>
+
+        <h4>Create one for visual studio</h4>
     </Stack>
   </>;
 };
