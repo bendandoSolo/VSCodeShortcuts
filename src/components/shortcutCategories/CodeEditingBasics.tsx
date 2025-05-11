@@ -27,16 +27,16 @@ const CodeEditingBasics = () => (
 
     <ShortCut Shortcut='CTRL + SHIFT L on highlighted word' Line2='Highlights any instance of that word adds cursor so can edit' />
 
-    <ShortCut Shortcut='SHIFT + F12 on highlighted word' Line2='Find all references in sidebar' />
+    <ShortCut Shortcut='SHIFT + F12 on highlighted word' Line2='Find all references in current file on sidebar' />
 
   <ShortCut Shortcut='F12 on highlighted word' Line2='Goto Definition' />
   <ShortCut Shortcut='3 clicks or CTRL + L/ 4 clicks' Line2='Select Entire Line, with CTRL + L pressing multiple times keeps selecting next lines/ Select Entire Doc' />
   <ShortCut Shortcut='CTRL + SHIFT + ENTER' Line2='Insert line below' />
   <ShortCut Shortcut='CTRL + ENTER' Line2='Open Copilot solutions???' />
   <ShortCut Shortcut='CTRL + ↑/↓' Line2='Scroll up and down file, leaving cursor where it was' />
-  <ShortCut Shortcut='ALT + Z' Line2='Toggle word wrap' />S
+  <ShortCut Shortcut='ALT + Z' Line2='Toggle word wrap' />
   <ShortCut Shortcut='CTRL + SHIFT + \' Line2='Jump to matching bracket' />
-
+  <ShortCut Shortcut='CTRL + Home/End' Line2='Goto Top/Bottom of file' />
   </ThreeColumnsContainer>
   </>
 );

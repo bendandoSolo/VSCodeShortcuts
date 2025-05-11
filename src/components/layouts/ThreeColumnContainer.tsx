@@ -6,7 +6,7 @@ interface BoxTestProps extends BoxProps {
 }
 
 export const ThreeColumnsContainer = ({ children, ...props }: BoxTestProps) => (
-  <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} {...props}>
+  <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', paddingBottom: '50px' }} {...props}>
     {children}
   </Box>
 );
