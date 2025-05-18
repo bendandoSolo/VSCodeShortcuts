@@ -18,8 +18,8 @@ const WindowNavigation = () => (
         <ShortCut Shortcut='CTRL + G' Line2='Goto Source Control' />
         <ShortCut Shortcut='CTRL + ,' Line2='Open Settings' />
         <ShortCut Shortcut='ALT + ←/→' Line2='Jump back and forward through recent sections of code/files' />
-        <ShortCut Shortcut='CCTRL + TAB' Line2='Shows entire navigation history' />
-        
+        <ShortCut Shortcut='CTRL + TAB' Line2='Shows entire navigation history' />
+        <ShortCut Shortcut='CTRL + B' Line2='Open Close File Explorer' />
         </ThreeColumnsContainer>
     </>
 );

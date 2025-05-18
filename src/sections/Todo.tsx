@@ -10,10 +10,10 @@ export const Todo: React.FunctionComponent<IReadMeProps> = () => {
 
     <Stack spacing={2} direction="column" alignItems="flex-centre">
         <h2>Next Steps</h2>
-        
-        <p>Add prettier config</p>
-        <p>Fix weird alignment issues</p>
+        <p><a href='https://www.youtube.com/watch?v=nWIRJBCjls8' >Watch Video for more nice shortcuts</a></p>
         <p>Setup basic linting</p>
+        <p>Add prettier config</p>
+        
         <p>Create page of know answers, some of the shortcuts we know and should test ourselves and then remove from project</p>
         <p>Make it usable by swapping and renaming line 1 and line2 then have accordion with answers.</p>
         <p>Continue to leare better shortcuts </p>

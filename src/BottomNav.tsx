@@ -7,7 +7,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 
-export const BottomNav: React.FunctionComponent<{}> = () => {
+export const  BottomNav: React.FunctionComponent<{}> = () => {
   return (
     <BottomNavigation showLabels sx={{ width: '100vw', position: 'fixed', bottom: 0 }}>
       <BottomNavigationAction label="Home" icon={<EditIcon />} component="a" href="/" target="_blank" />

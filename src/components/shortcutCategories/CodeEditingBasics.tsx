@@ -10,14 +10,13 @@ const CodeEditingBasics = () => (
     <ThreeColumnsContainer>
 
     <ShortCut Shortcut='ALT + click' Line2='Place cursor on multiple places at once' />
-    
-    
+        
     <ShortCut Shortcut='CTRL + ALT + &uarr;/&darr;' Line2='Add another cursor at same place above or below' />
-
-    {/* todo: indicate that this is know and not need to be added to the list */}
     <ShortCut Shortcut='CTRL + SHIFT + &uarr;/&darr;' Line2='Select a line, one line at a time' />
 
     <ShortCut Shortcut='CTRL + &larr;/&rarr;' Line2='Jump to next/previous word' />
+
+    <ShortCut Shortcut='CTRL + SHIFT + &larr;/&rarr;' Line2='Jump to next/previous word and select all'  />
 
     <ShortCut Shortcut='ALT + &uarr;/&darr;' Line2='Move current line or selected block of code up and down' />
 
@@ -32,13 +31,16 @@ const CodeEditingBasics = () => (
   <ShortCut Shortcut='F12 on highlighted word' Line2='Goto Definition' />
   <ShortCut Shortcut='3 clicks or CTRL + L/ 4 clicks' Line2='Select Entire Line, with CTRL + L pressing multiple times keeps selecting next lines/ Select Entire Doc' />
   <ShortCut Shortcut='CTRL + SHIFT + ENTER' Line2='Insert line below' />
-  <ShortCut Shortcut='CTRL + ENTER' Line2='Open Copilot solutions???' />
+  <ShortCut Shortcut='CTRL + i' Line2='Open Copilot ' />
   <ShortCut Shortcut='CTRL + ↑/↓' Line2='Scroll up and down file, leaving cursor where it was' />
   <ShortCut Shortcut='ALT + Z' Line2='Toggle word wrap' />
+    <ShortCut Shortcut='CRTL + /' Line2='Comment out line' />
   <ShortCut Shortcut='CTRL + SHIFT + \' Line2='Jump to matching bracket' />
   <ShortCut Shortcut='CTRL + Home/End' Line2='Goto Top/Bottom of file' />
+  <ShortCut Shortcut='CTRL + T' Line2='Search Symbol...anything used throughout project' />
   </ThreeColumnsContainer>
   </>
 );
+
 
 export default CodeEditingBasics;
