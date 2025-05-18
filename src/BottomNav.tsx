@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
@@ -19,3 +19,4 @@ export const  BottomNav: React.FunctionComponent<{}> = () => {
   );
 };
 
+git 
