@@ -1,11 +1,6 @@
-//investigate why this is not working?
-
-
 {
   "compilerOptions": {
-    // ... your other compiler options
     "baseUrl": ".",
-    
         "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],

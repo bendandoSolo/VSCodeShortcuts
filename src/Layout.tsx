@@ -4,7 +4,7 @@ import { BottomNav } from './BottomNav';
 
 export const Layout: FC = () => {
   return (
-    <div style={{width: '100vw'}}>
+    <div style={{ width: '100vw' }}>
       <Outlet />
       <BottomNav />
     </div>
