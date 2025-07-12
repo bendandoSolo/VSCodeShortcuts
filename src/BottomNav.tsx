@@ -6,6 +6,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import EditIcon from '@mui/icons-material/Edit';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import CheckIcon from '@mui/icons-material/Check';
 
 export const BottomNav: React.FunctionComponent = () => {
   return (
@@ -20,6 +21,7 @@ export const BottomNav: React.FunctionComponent = () => {
       />
       <BottomNavigationAction label="Other" icon={<QuestionMarkIcon />} component="a" href="/other" target="_blank" />
       <BottomNavigationAction label="TS" icon={<LocalLibraryIcon />} component="a" href="/TS" target="_blank" />
+      <BottomNavigationAction label="Learnt" icon={<CheckIcon />} component="a" href="/known" target="_blank" />
       <BottomNavigationAction label="Read Me" icon={<MenuBookIcon />} component="a" href="/ReadMe" target="_blank" />
     </BottomNavigation>
   );

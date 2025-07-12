@@ -8,6 +8,7 @@ import { Layout } from './Layout';
 import { OtherPage } from './OtherPage';
 import { LearnTSPage } from './LearnTSPage';
 import { NavigationPage } from './NavigationPage';
+import { KnowPage } from './Known';
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/other" element={<OtherPage />} />
           <Route path="/TS" element={<LearnTSPage />} />
           <Route path="/readMe" element={<Todo />} />
+          <Route path="/known" element={<KnowPage />} />
         </Route>
       </Routes>
     </StrictMode>

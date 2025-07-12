@@ -12,9 +12,7 @@ const CodeEditingBasics = () => (
       <ShortCut Shortcut="CTRL + ALT + &uarr;/&darr;" Line2="Add another cursor at same place above or below" />
       <ShortCut Shortcut="CTRL + SHIFT + &uarr;/&darr;" Line2="Select a line, one line at a time" />
 
-      <ShortCut Shortcut="CTRL + &larr;/&rarr;" Line2="Jump to next/previous word" />
-
-      <ShortCut Shortcut="CTRL + SHIFT + &larr;/&rarr;" Line2="Jump to next/previous word and select all" />
+     
 
       <ShortCut Shortcut="ALT + &uarr;/&darr;" Line2="Move current line or selected block of code up and down" />
 

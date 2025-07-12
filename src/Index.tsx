@@ -3,8 +3,8 @@ import Essential from './components/shortcutCategories/Essential';
 import CodeEditingBasics from './components/shortcutCategories/CodeEditingBasics';
 
 function Index() {
-  return (
-    <>
+return (
+  <>
       <Essential />
       <CodeEditingBasics />
     </>
